@@ -6,11 +6,11 @@ module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, 'app.js'),
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    contentBase: path.join(__dirname, 'dist'),
     watchContentBase: true,
     port: 3000
   },
